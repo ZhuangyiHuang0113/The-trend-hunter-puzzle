@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+.env
+keys.env
+.trend_cache/
+trends.json
+backtests/
+.~*
+.DS_Store
+

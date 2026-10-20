@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Trend Hunter: run 2026-07-24",
+      "type": "shell",
+      "command": "python run.py --input voices.jsonl --as-of 2026-07-24 --out trends.json",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Trend Hunter: tests",
+      "type": "shell",
+      "command": "python -m pytest",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Trend Hunter: rolling backtest",
+      "type": "shell",
+      "command": "python scripts/backtest.py --input voices.jsonl --calendar versions.xlsx --dates 2026-06-30 2026-07-15 2026-07-24 2026-08-15 2026-08-30",
+      "problemMatcher": []
+    }
+  ]
+}
+
