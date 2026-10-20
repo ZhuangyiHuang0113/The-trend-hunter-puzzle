@@ -14,7 +14,7 @@ python -m pip install -r requirements.txt
 ```bash
 python run.py --input voices.jsonl --as-of 2026-07-24 --out trends.json
 ```
-## 默认的 `hybrid` 模式会在本地完成候选发现与统计分析；如果运行环境提供 OpenAI 或 Jev API Key，只会将少量入围候选交给外部模型进行语义复核和标题优化。没有 API Key 时，整个流程仍可完整离线运行，建议先使用不接入 API KEY 的版本。
+# 默认的 `hybrid` 模式会在本地完成候选发现与统计分析；如果运行环境提供 OpenAI 或 Jev API Key，只会将少量入围候选交给外部模型进行语义复核和标题优化。没有 API Key 时，整个流程仍可完整离线运行，建议先使用不接入 API KEY 的版本。
 
 ---
 
